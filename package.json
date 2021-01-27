@@ -6,14 +6,18 @@
   "scripts": {
     "server": "nodemon index.js",
     "dev": "nodemon index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run bulid --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^5.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.11.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
