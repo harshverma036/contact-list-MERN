@@ -20,7 +20,7 @@ app.use(express.json());
 
 app.use("/api", require("./routes/contact-routes"));
 
-// if in production
+// if in productioncd ..
 if (process.env.NODE_ENV === "production") {
   // serve static files
   app.use(express.static("client/build"));
